@@ -3,9 +3,13 @@
 import { addLista, getLista, limpaLista } from "./lista.js";
 
 const olItens = document.querySelector("#itens");
-const pEntrada = document.querySelector('#entrada');
 const btnAdicionar = document.querySelector("#adicionar");
 const btnLimpar = document.querySelector("#limpar");
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pEntrada = document.querySelector("#entrada");
+    pEntrada.innerText = '/Item/';
+});
 
 btnAdicionar.addEventListener('click', adicionaLista);
 

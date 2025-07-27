@@ -11,5 +11,8 @@ export function limpaLista() {
 
 export function addLista() {
     let item = document.querySelector("#entrada");
-    lista.push(item.textContent);
+    if(item.textContent) {
+        lista.push(item.textContent);
+        item.textContent = "";
+    }
 }
