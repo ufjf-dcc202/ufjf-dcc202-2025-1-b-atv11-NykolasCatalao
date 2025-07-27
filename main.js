@@ -1,6 +1,6 @@
 // main.js
 
-import { addLista, getLista, limpaLista } from "./lista.js";
+import { adicionaNaLista, getLista, limpaLista } from "./lista.js";
 
 const olItens = document.querySelector("#itens");
 const btnAdicionar = document.querySelector("#adicionar");
@@ -33,6 +33,6 @@ function atualizarLista() {
 }
 
 function adicionaLista() {
-    addLista();
+    adicionaNaLista();
     atualizarLista();
 }

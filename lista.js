@@ -9,7 +9,7 @@ export function limpaLista() {
     lista.splice(0);
 }
 
-export function addLista() {
+export function adicionaNaLista() {
     let item = document.querySelector("#entrada");
     if(item.textContent) {
         lista.push(item.textContent);
